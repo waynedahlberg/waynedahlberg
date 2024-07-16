@@ -8,7 +8,7 @@ export default function Example() {
         <div className="w-full border-t border-slate-500/30" />
       </div>
       <div className="relative flex justify-center">
-        <span className="bg-background px-4 text-slate-500/80 hover:text-slate-800 transition duration-300">
+        <span className="bg-background px-4 text-slate-500/80 hover:text-primary transition duration-300">
           <Link href="/">
             <HatLogo />
           </Link>

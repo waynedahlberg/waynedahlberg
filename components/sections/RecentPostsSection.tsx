@@ -12,7 +12,7 @@ const RecentPostsSection = () => {
   return (
     <section className="w-full flex flex-col gap-4 px-4 sm:px-8">
       <SectionHeader
-        title="Recent Posts"
+        title="Recent blog posts"
         seeAllTitle="See all"
         visible={true}
         href="/blog"

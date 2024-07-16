@@ -24,18 +24,20 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${GeistSans.variable} ${GeistMono.variable}`} suppressHydrationWarning={true}>
       <body className={cn("min-h-screen font-sans antialiased")}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <SiteHeader />
-          <ClientTransitionWrapper>
-            {children}
-          </ClientTransitionWrapper>
-          <SiteFooter />
-        </ThemeProvider>
+        <div className="relative flex min-h-dvh flex-col bg-background">
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
+            <SiteHeader />
+            <ClientTransitionWrapper>
+              {children}
+            </ClientTransitionWrapper>
+            <SiteFooter />
+          </ThemeProvider>
+        </div>
       </body>
     </html>
   );

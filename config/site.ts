@@ -2,7 +2,8 @@
 export const siteConfig = {
   name: 'Wayne Dahlberg',
   url: 'https://waynedahlberg.com',
-  description: 'Software Designer + Maker',
+  description:
+    'Software Designer + Maker. Writing about design, code and side projects.',
   author: 'Wayne Dahlberg',
   entity: 'SuperInteresting',
   role: 'Software Designer',
