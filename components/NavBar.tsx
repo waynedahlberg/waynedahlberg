@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { cn } from '@/lib/utils'
 
-import HomeButton from './HomeButton'
+import HatButton from './HatButton'
 import { ModeToggle } from './ModeToggle'
 
 const navigation = [
@@ -32,8 +32,9 @@ const NavBar = () => {
   return (
     <div className="sm:px-8 w-full sm:max-w-screen-sm flex items-center justify-between max-w-screen-lg mx-auto">
       <div className="w-full h-16 flex items-center justify-between px-2 sm:px-0">
-        <HomeButton />
-        <div className="flex items-center justify-between space-x-4">          {navigationLinks}
+        <HatButton />
+        <div className="flex items-center justify-between space-x-4">
+          {navigationLinks}
           <ModeToggle />
         </div>
       </div>
