@@ -4,6 +4,8 @@ import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
 import { siteConfig } from "@/config/site";
 import { ThemeProvider } from "@/components/ThemeProvider";
+import ClientTransitionWrapper from "@/components/ClientTransitionWrapper";
+
 import "./globals.css";
 
 import SiteHeader from "@/components/SiteHeader";
@@ -29,7 +31,9 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <SiteHeader />
-          {children}
+          <ClientTransitionWrapper>
+            {children}
+          </ClientTransitionWrapper>
           <SiteFooter />
         </ThemeProvider>
       </body>
