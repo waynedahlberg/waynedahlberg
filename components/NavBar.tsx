@@ -30,11 +30,10 @@ const NavBar = () => {
   ))
 
   return (
-    <div className="px-4 sm:px-8 w-full sm:max-w-screen-sm flex items-center justify-between max-w-screen-lg mx-auto">
-      <div className="w-full h-14 flex items-center justify-between">
+    <div className="sm:px-8 w-full sm:max-w-screen-sm flex items-center justify-between max-w-screen-lg mx-auto">
+      <div className="w-full h-16 flex items-center justify-between px-2 sm:px-0">
         <HomeButton />
-        <div className="flex items-center justify-end space-x-5 pr-4 sm:pr-0">
-          {navigationLinks}
+        <div className="flex items-center justify-between space-x-4">          {navigationLinks}
           <ModeToggle />
         </div>
       </div>

@@ -6,6 +6,9 @@ import { siteConfig } from "@/config/site";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import "./globals.css";
 
+import SiteHeader from "@/components/SiteHeader";
+import SiteFooter from "@/components/SiteFooter";
+
 export const metadata: Metadata = {
   title: `${siteConfig.name} | ${siteConfig.description}`,
   // description: siteConfig.description, // TODO: add longer description
@@ -25,7 +28,9 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <SiteHeader />
           {children}
+          <SiteFooter />
         </ThemeProvider>
       </body>
     </html>
