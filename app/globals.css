@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+/* See theming documentation at ui.shadcn.com for more information on how to use these colors (RadixUI + ShadcnUI + CSS Variables) */
+
 @layer base {
   :root {
     --background: 0 0% 100%;

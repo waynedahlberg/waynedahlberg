@@ -2,12 +2,13 @@ import type { Metadata } from "next";
 import { cn } from "@/lib/utils";
 import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
+import { siteConfig } from "@/config/site";
 
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Wayne Dahlberg",
-  description: "Software Designer",
+  title: `${siteConfig.name} | ${siteConfig.description}`,
+  // description: siteConfig.description, // TODO: add longer description
 };
 
 export default function RootLayout({
