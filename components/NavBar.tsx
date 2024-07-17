@@ -21,7 +21,7 @@ const NavBar = () => {
     <Link
       key={link.href}
       href={link.href}
-      className={cn('font-semibold transition-colors hover:text-primary tracking-tight ',
+      className={cn('font-medium transition-colors hover:text-primary tracking-tight ',
         pathname === link.href
           ? 'text-primary/80'
           : 'text-secondary-foreground/50')}>
@@ -30,8 +30,8 @@ const NavBar = () => {
   ))
 
   return (
-    <div className="sm:px-8 w-full sm:max-w-screen-sm flex items-center justify-between max-w-screen-lg mx-auto">
-      <div className="w-full h-16 flex items-center justify-between px-2 sm:px-0">
+    <div className="sm:px-3 w-full sm:max-w-screen-sm flex items-center justify-between max-w-screen-lg mx-auto">
+      <div className="w-full h-16 flex items-center justify-between pr-4 sm:pr-0 pl-2 sm:pl-0">
         <HatButton />
         <div className="flex items-center justify-between space-x-4">
           {navigationLinks}

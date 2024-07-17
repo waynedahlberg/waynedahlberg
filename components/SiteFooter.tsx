@@ -43,7 +43,8 @@ const SiteFooter = () => {
       className={cn('font-medium text-regular transition-colors hover:text-primary',
         pathname === link.href
           ? 'text-primary/80'
-          : 'text-secondary-foreground/50')}>
+          : 'text-secondary-foreground/50')}
+    >
       {link.name}
     </Link>
   ))
@@ -61,7 +62,7 @@ const SiteFooter = () => {
         <ul className="flex flex-row items-center justify-between sm:justify-center gap-6">
           {socialLinks.map((item) => (
             <li key={item.name}>
-              <Link href={item.href} className="text-primary/50 hover:text-primary">{item.icon}</Link>
+              <Link href={item.href} className="text-primary/50 hover:text-primary" rel="noopener noreferrer" target="_blank">{item.icon}</Link>
             </li>
           ))}
         </ul>
