@@ -30,7 +30,7 @@ const NavBar = () => {
   ))
 
   return (
-    <div className="sm:px-3 w-full sm:max-w-screen-sm flex items-center justify-between max-w-screen-lg mx-auto">
+    <div className="sm:px-3 w-full sm:max-w-screen-sm flex items-center justify-between max-w-screen-sm mx-auto">
       <div className="w-full h-16 flex items-center justify-between pr-4 sm:pr-0 pl-2 sm:pl-0">
         <HatButton />
         <div className="flex items-center justify-between space-x-4">
