@@ -32,9 +32,9 @@ const RecentConcepts = () => {
         />
         <div className="flex flex-col sm:flex-row gap-4">
           {concepts.slice(0, 3).map((concept, index) => (
-            <div key={index} className="sm:w-1/3 sm:mb-0 mb-4">
-              <Link href={`/concepts/${concept.slug}`}>
-                <Image src={heroImage} alt={concept.title} className="sm:w-full sm:aspect-16/9 rounded-lg" />
+            <div key={index} className="sm:w-1/3 sm:mb-0 mb-4 hover:bg-accent transition-all duration-200 rounded-lg">
+            <Link href={`/concepts/${concept.slug}`}>
+                <Image src={heroImage} alt={concept.title} className="w-full aspect-16/9 rounded-lg" />
                 <p className="sm:text-xs py-2 text-center font-semibold">{concept.title}</p>
               </Link>
             </div>

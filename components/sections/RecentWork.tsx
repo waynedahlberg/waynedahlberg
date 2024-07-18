@@ -32,10 +32,12 @@ const RecentWork = () => {
         />
         <div className="flex flex-col sm:flex-row gap-4">
           {Works.slice(0, 3).map((work, index) => (
-            <div key={index} className="sm:w-1/3 sm:mb-0 mb-4">
-              <Link href={`/works/${work.slug}`}>
-                <Image src={heroImage} alt={work.title} className="sm:w-full sm:aspect-16/9 rounded-lg" />
-                <p className="sm:text-xs py-2 text-center font-semibold">{work.title}</p>
+            <div key={index} className="sm:w-1/3 sm:mb-0 mb-4 hover:bg-accent transition-all duration-200 rounded-lg">
+              <Link href={`/works/${work.slug}`} className="relative z-0">
+                <Image src={heroImage} alt={work.title} className="w-full aspect-16/9 rounded-lg transition-all duration-200" />
+                <p className="sm:text-xs py-2 text-center font-semibold">
+                  {work.title}
+                </p>
               </Link>
             </div>
           ))}

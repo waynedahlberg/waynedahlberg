@@ -32,9 +32,9 @@ const RecentProjectss = () => {
         />
         <div className="flex flex-col sm:flex-row gap-4">
           {Projects.slice(0, 3).map((project, index) => (
-            <div key={index} className="sm:w-1/3 sm:mb-0 mb-4">
-              <Link href={`/works/${project.slug}`}>
-                <Image src={heroImage} alt={project.title} className="sm:w-full sm:aspect-16/9 rounded-lg" />
+            <div key={index} className="sm:w-1/3 sm:mb-0 mb-4 hover:bg-accent transition-all duration-200 rounded-lg">
+            <Link href={`/works/${project.slug}`}>
+                <Image src={heroImage} alt={project.title} className="w-full aspect-16/9 rounded-lg" />
                 <p className="sm:text-xs py-2 text-center font-semibold">{project.title}</p>
               </Link>
             </div>

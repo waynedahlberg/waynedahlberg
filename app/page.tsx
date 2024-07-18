@@ -6,6 +6,7 @@ import RecentPostsSection from "@/components/sections/RecentPosts";
 import RecentConceptsSection from "@/components/sections/RecentConcepts";
 import RecentWorkSection from "@/components/sections/RecentWork";
 import RecentProjectsSection from "@/components/sections/RecentProjects";
+import BooksSection from "@/components/sections/BooksSection";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <RecentConceptsSection />
       <RecentWorkSection />
       <RecentProjectsSection />
+      <BooksSection />
     </main>
   );
 }
