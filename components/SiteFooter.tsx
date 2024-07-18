@@ -56,8 +56,9 @@ const SiteFooter = () => {
     <footer className="w-full mx-auto max-w-screen-sm px-4 sm:px-8">
       <Divider showLogo={true} />
       <div className="pb-8">
-        <ul className="flex flex-row items-start justify-between sm:justify-center pt-8 pb-16 gap-8 sm:gap-4 text-secondary-foreground/20 hover:text-primary">
+        <ul className="flex flex-row items-center justify-between sm:justify-center pt-8 pb-16 gap-8 sm:gap-4 text-secondary-foreground/20 hover:text-primary">
           {navigationLinks}
+          <ModeToggle />
         </ul>
         <ul className="flex flex-row items-center justify-between sm:justify-center gap-6">
           {socialLinks.map((item) => (
@@ -66,11 +67,7 @@ const SiteFooter = () => {
             </li>
           ))}
         </ul>
-        <div className="flex flex-row items-center justify-center sm:items-center sm:justify-center pt-12">
-          <p className="text-secondary-foreground/50">Appearance:</p>
-          <ModeToggle />
-        </div>
-        <p className="text-xs text-center text-secondary-foreground/40 pt-2">© 2024 {siteConfig.author}. All rights reserved.</p>
+        <p className="text-xs text-center text-secondary-foreground/30 pt-2">© 2024 {siteConfig.author}. All rights reserved.</p>
       </div>
     </footer>
   )
