@@ -22,18 +22,20 @@ const socialLinks: SocialLink[] = [
 export default function IntroSection() {
   return (
     <div className="pt-20 sm:pt-20 flex-col justify-start items-start gap-5 inline-flex text-md selection:bg-amber-500 selection:text-primary px-4 sm:px-8 text-base leading-normal">
-      <HelloLogo />
+      <div className='flex items-center justify-center text-secondary-foreground/70 leading-5 sm:leading-normal'>
+        <div className='text-2xl sm:-ml-10 sm:pr-2 hover:rotate-45 transition-all duration-300 repeat-infinite cursor-default @apply wiggle'>
+          <p className="hidden sm:block">👋</p>
+        </div>
+        <HelloLogo />
+      </div>
       <div className='text-secondary-foreground/70 leading-5 sm:leading-normal'>
         <p className="pb-4 sm:pb-4">
-          my name is Wayne,
-        </p>
-        <p className="pb-4 sm:pb-4">
-          I am a software designer, coder, and tinkerer. I am also the creator of <Link href="#" className="font-medium hover:underline decoration-indigo-400 decoration-2">Super Interesting</Link> is a small studio I created for developing apps, training, and resources for software designers.</p>
+          I&apos;m Wayne Dahlberg — a software designer from Utah. I am the creator of <Link href="#" className="text-primary font-medium hover:underline decoration-indigo-400 decoration-2">Super Interesting</Link>, a studio developing applications, training, and other resources for software designers. <Link href="#" className="text-primary font-medium hover:underline decoration-indigo-400 decoration-2">Read more</Link></p>
         <p className="pb-2 sm:pb-4">
-          Previously, I was the founding team designer of <Link href="https://chatbooks.com" className="font-medium text-secondary-foreground sm:text-secondary-foreground/70 hover:underline decoration-teal-400 decoration-2">Chatbooks</Link>, where, for more than a decade, I helped create and shape the photo book creation experience as ux, lead, and principal designer, while also architecting the <Link href="#" className="font-medium text-secondary-foreground sm:text-secondary-foreground/70 hover:underline decoration-teal-400 decoration-2 transition-all duration-200">Breakfast</Link>, design system.
+          Previously, I was the founding team designer of <Link href="https://chatbooks.com" className="font-medium hover:underline decoration-teal-400 decoration-2 text-primary">Chatbooks</Link>, where, for more than a decade, I helped create and shape the photo book creation experience as ux, lead, and principal designer, while also architecting the <Link href="#" className="font-medium hover:underline decoration-teal-400 decoration-2 transition-all duration-200 text-primary">Breakfast</Link>, design system.
         </p>
         <p className="pb-2 sm:pb-4">
-          My design philosophy and experience is centered around <Link href="#" className="font-medium text-secondary-foreground sm:text-secondary-foreground/70 hover:underline decoration-indigo-400 decoration-2">simplicity</Link>, <Link href="#" className="font-medium text-secondary-foreground sm:text-secondary-foreground/70 hover:underline decoration-indigo-400 decoration-2">proximity</Link>, and <Link href="#" className="font-medium text-secondary-foreground sm:text-secondary-foreground/70 hover:underline decoration-indigo-400 decoration-2">humanity</Link>. These principles guide my approach to new ideas, challenges and problem solving. I also believe that code is the <Link href="#" className="font-medium text-secondary-foreground sm:text-secondary-foreground/70 hover:underline decoration-indigo-400 decoration-2">ultimate fidelity of design</Link>.
+          My design philosophy and experience is centered around <Link href="#" className="font-medium hover:underline decoration-indigo-400 decoration-2 text-primary">simplicity</Link>, <Link href="#" className="font-medium hover:underline decoration-indigo-400 decoration-2 text-primary">proximity</Link>, and <Link href="#" className="font-medium hover:underline decoration-indigo-400 decoration-2 text-primary">humanity</Link>. These principles guide my approach to new ideas, challenges and problem solving. I also believe that code is the <Link href="#" className="font-medium hover:underline decoration-indigo-400 decoration-2 text-primary">ultimate fidelity of design</Link>.
         </p>
         <p className="pb-2 sm:pb-4">
           I am very passionate about building great things with great people — If this resonates with you and your team, <Link href="#" className="font-medium text-secondary-foreground sm:text-secondary-foreground/70 hover:underline decoration-sky-400 decoration-2">let&apos;s talk</Link>.

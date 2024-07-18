@@ -10,14 +10,14 @@ const blogPosts = [
 
 const RecentPostsSection = () => {
   return (
-    <section className="w-full flex flex-col gap-4 px-4 sm:px-8">
+    <section className="w-full flex flex-col gap-4 px-4 sm:px-8 text-primary/60">
       <SectionHeader
         title="Recent blog posts"
         seeAllTitle="See all"
         visible={true}
         href="/blog"
       />
-      <ul className="flex flex-col gap-4">
+      <ul className="flex flex-col gap-4 text-primary">
         {blogPosts.map((post, index) => (
           <li key={index}>
             <h3>{post.title}</h3>
