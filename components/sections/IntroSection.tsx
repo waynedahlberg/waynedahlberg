@@ -35,7 +35,7 @@ export default function IntroSection() {
             I’m Wayne Dahlberg — a software designer from Utah. I’m the creator of <Link href="https://chatbooks.com" className="font-medium hover:underline decoration-teal-400 decoration-2 text-primary">Super Interesting</Link>, a studio creating apps and resources for designers.
           </p>
           <p className="pb-4 sm:pb-4">
-            Previously, I was the founding team designer of <Link href="https://chatbooks.com" className="font-medium hover:underline decoration-teal-400 decoration-2 text-primary/70">Chatbooks</Link>, where I helped create and shape the photo book creation experience for a decade.
+            Previously, I was the founding team designer of <Link href="https://chatbooks.com" className="font-medium hover:underline decoration-teal-400 decoration-2 text-primary/70">Chatbooks</Link>, where I helped create and shape the photo book creation experience for nearly a decade.
           </p>
           <p className="pb-4 sm:pb-4">
             Simplicity, proximity, and humanity and key to my <Link href="https://chatbooks.com" className="font-medium hover:underline decoration-teal-400 decoration-2 text-primary/70">design thinking and process</Link>. I firmly believe code is the <Link href="https://chatbooks.com" className="font-medium hover:underline decoration-teal-400 decoration-2 text-primary/70">ultimate fidelity of software design</Link>.
