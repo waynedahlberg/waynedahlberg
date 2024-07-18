@@ -41,7 +41,7 @@ export default function IntroSection() {
             Simplicity, proximity, and humanity are keys to my <Link href="https://chatbooks.com" className="font-medium hover:underline decoration-teal-400 decoration-2 text-primary/70">design thinking and process</Link>. I firmly believe code is the <Link href="https://chatbooks.com" className="font-medium hover:underline decoration-teal-400 decoration-2 text-primary/70">ultimate fidelity of software design</Link>.
           </p>
           <p className="pb-4 sm:pb-4">
-            In my spare time I enjoy robotics, 3D design, film photography, and scenic drives with family in our old Land Cruiser.
+            In my spare time I enjoy time with family, photography, robotics, 3D design, and scenic drives in our old Land Cruiser.
           </p>
         </div>
         <div className="w-full mx-auto max-w-screen-sm px-4 sm:px-8 pt-8">
