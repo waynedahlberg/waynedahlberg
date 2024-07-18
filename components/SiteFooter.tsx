@@ -54,7 +54,7 @@ const SiteFooter = () => {
 
   return (
     <footer className="w-full mx-auto max-w-screen-sm px-4 sm:px-8">
-      <Divider />
+      <Divider showLogo={true} />
       <div className="pb-8">
         <ul className="flex flex-row items-start justify-between sm:justify-center pt-8 pb-16 gap-8 sm:gap-4 text-secondary-foreground/20 hover:text-primary">
           {navigationLinks}

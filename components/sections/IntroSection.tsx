@@ -4,6 +4,7 @@ import SocialIcons from '@/components/svg/SocialIcons'
 import { siteConfig } from '@/config/site'
 import Link from 'next/link'
 import Spacer from '@/components/Spacer'
+import Divider from '@/components/Divider'
 
 type SocialLink = {
   name: string
@@ -21,39 +22,41 @@ const socialLinks: SocialLink[] = [
 
 export default function IntroSection() {
   return (
-    <div className="pt-20 sm:pt-20 flex-col justify-start items-start gap-5 inline-flex text-md selection:bg-amber-500 selection:text-primary px-4 sm:px-8 text-base leading-normal">
-      <div className='flex items-center justify-center text-secondary-foreground/70 leading-5 sm:leading-normal'>
-        <div className='text-2xl sm:-ml-10 sm:pr-2 hover:rotate-45 transition-all duration-300 repeat-infinite cursor-default @apply wiggle'>
-          <p className="hidden sm:block">👋</p>
+    <>
+      <div className="pt-8 sm:pt-16 flex-col justify-start items-start gap-5 inline-flex text-md selection:bg-amber-500 selection:text-primary px-4 sm:px-8 text-base leading-normal">
+        <div className='flex items-center justify-center text-secondary-foreground/70 leading-5 sm:leading-normal pb-2 sm:pb-8'>
+          <div className='text-2xl sm:-ml-10 sm:pr-2 hover:rotate-45 transition-all duration-300 repeat-infinite cursor-default @apply wiggle'>
+            <p className="hidden sm:block">👋</p>
+          </div>
+          <HelloLogo />
         </div>
-        <HelloLogo />
+        <div className='text-secondary-foreground/60 leading-5 leading-normal'>
+          <p className="pb-4 sm:pb-4">
+            I’m Wayne Dahlberg — a software designer from Utah. I’m the creator of <Link href="https://chatbooks.com" className="font-medium hover:underline decoration-teal-400 decoration-2 text-primary">Super Interesting</Link>, a studio creating apps and resources for designers.
+          </p>
+          <p className="pb-4 sm:pb-4">
+            Previously, I was the founding team designer of <Link href="https://chatbooks.com" className="font-medium hover:underline decoration-teal-400 decoration-2 text-primary/70">Chatbooks</Link>, where I helped create and shape the photo book creation experience for a decade.
+          </p>
+          <p className="pb-4 sm:pb-4">
+            Simplicity, proximity, and humanity and key to my <Link href="https://chatbooks.com" className="font-medium hover:underline decoration-teal-400 decoration-2 text-primary/70">design thinking and process</Link>. I firmly believe code is the <Link href="https://chatbooks.com" className="font-medium hover:underline decoration-teal-400 decoration-2 text-primary/70">ultimate fidelity of software design</Link>.
+          </p>
+          <p className="pb-4 sm:pb-4">
+            In my spare time I enjoy robotics, 3D design, film photography, and scenic drives with my family in our old Land Cruiser.
+          </p>
+        </div>
+        <div className="w-full mx-auto max-w-screen-sm px-4 sm:px-8 pt-8">
+          <ul className="flex flex-row items-center justify-between sm:justify-center gap-6">
+            {socialLinks.map((item) => (
+              <li key={item.name}>
+                <Link href={item.href} className="text-primary/50 hover:text-primary" rel="noopener noreferrer" target="_blank">{item.icon}</Link>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
-      <div className='text-secondary-foreground/70 leading-5 sm:leading-normal'>
-        <p className="pb-4 sm:pb-4">
-          I&apos;m Wayne Dahlberg — a software designer from Utah. I am the creator of <Link href="#" className="text-primary font-medium hover:underline decoration-indigo-400 decoration-2">Super Interesting</Link>, a studio developing applications, training, and other resources for software designers. <Link href="#" className="text-primary font-medium hover:underline decoration-indigo-400 decoration-2">Read more</Link></p>
-        <p className="pb-2 sm:pb-4">
-          Previously, I was the founding team designer of <Link href="https://chatbooks.com" className="font-medium hover:underline decoration-teal-400 decoration-2 text-primary">Chatbooks</Link>, where, for more than a decade, I helped create and shape the photo book creation experience as ux, lead, and principal designer, while also architecting the <Link href="#" className="font-medium hover:underline decoration-teal-400 decoration-2 transition-all duration-200 text-primary">Breakfast</Link>, design system.
-        </p>
-        <p className="pb-2 sm:pb-4">
-          My design philosophy and experience is centered around <Link href="#" className="font-medium hover:underline decoration-indigo-400 decoration-2 text-primary">simplicity</Link>, <Link href="#" className="font-medium hover:underline decoration-indigo-400 decoration-2 text-primary">proximity</Link>, and <Link href="#" className="font-medium hover:underline decoration-indigo-400 decoration-2 text-primary">humanity</Link>. These principles guide my approach to new ideas, challenges and problem solving. I also believe that code is the <Link href="#" className="font-medium hover:underline decoration-indigo-400 decoration-2 text-primary">ultimate fidelity of design</Link>.
-        </p>
-        <p className="pb-2 sm:pb-4">
-          I am very passionate about building great things with great people — If this resonates with you and your team, <Link href="#" className="font-medium text-secondary-foreground sm:text-secondary-foreground/70 hover:underline decoration-sky-400 decoration-2">let&apos;s talk</Link>.
-        </p>
-        <p className="pb-2 sm:pb-4">
-          Currently living in Utah with my family, where we love exploring the towering mountains and majestic red rocks in our trusty old Land Cruiser.
-        </p>
+      <div className='w-full mx-auto max-w-screen-sm px-4 sm:px-8 pt-16 pb-8'>
+        <Divider showLogo={false} />
       </div>
-      <div className="w-full mx-auto max-w-screen-sm px-4 sm:px-8">
-        <ul className="flex flex-row items-center justify-between sm:justify-center gap-6">
-          {socialLinks.map((item) => (
-            <li key={item.name}>
-              <Link href={item.href} className="text-primary/50 hover:text-primary" rel="noopener noreferrer" target="_blank">{item.icon}</Link>
-            </li>
-          ))}
-        </ul>
-      </div>
-      <Spacer height="16" />
-    </div>
+    </>
   )
 }
