@@ -25,10 +25,10 @@ export default function IntroSection() {
     <>
       <div className="pt-8 sm:pt-16 flex-col justify-start items-center sm:items-start gap-5 inline-flex text-md selection:bg-amber-500 selection:text-primary px-4 sm:px-8 text-base leading-normal">
         <div className='flex items-center justify-center text-secondary-foreground/70 leading-5 sm:leading-normal pb-2 sm:pb-8'>
-          <div className='text-2xl sm:-ml-10 pr-2 hover:rotate-[30deg] transition-all duration-300 repeat-infinite origin-[75%_95%] cursor-default @apply wiggle'>
-            <p>👋</p>
-          </div>
           <HelloLogo />
+          <div className='text-2xl ml-3 pr-2 hover:rotate-[-30deg] transition-all duration-300 repeat-infinite origin-[5%_75%] cursor-default @apply wiggle'>
+          <p style={{ transform: 'scaleX(-1)' }}>👋</p>
+          </div>
         </div>
         <div className='text-secondary-foreground/60 leading-normal'>
           <p className="pb-4 sm:pb-4">
