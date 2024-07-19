@@ -36,6 +36,7 @@ const socialLinks: SocialLink[] = [
 
 const SiteFooter = () => {
   const pathname = usePathname()
+
   const navigationLinks = navigation.map((link) => (
     <Link
       key={link.href}

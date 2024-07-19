@@ -32,9 +32,9 @@ export default function RootLayout({
             disableTransitionOnChange
           >
             <SiteHeader />
-            <ClientTransitionWrapper>
-              {children}
-            </ClientTransitionWrapper>
+            {/* <ClientTransitionWrapper> */}
+            {children}
+            {/* </ClientTransitionWrapper> */}
             <SiteFooter />
           </ThemeProvider>
         </div>
