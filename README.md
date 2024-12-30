@@ -1,4 +1,4 @@
-# Hello, I'm [Your Name] 👋
+# Hello, I'm Wayne
 ### Designer Who Codes | Product Builder
 
 I enjoy the gap between design and development, crafting digital experiences that are both beautiful and functional. 
