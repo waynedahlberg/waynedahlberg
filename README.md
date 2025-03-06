@@ -4,9 +4,9 @@
 I enjoy the gap between design and development, building digital experiences that are both beautiful and functional. 
 
 ## 🛠 Design Stack
-- **Figma**: Wireframing, User-flows, screen design, static prototyping
-- **SwiftUI**: Live prototyping with SwiftUI for native interactions
-- **React**: Web design, layout, and live prototyping
+- **Figma**: wireframing, user-flows, screen design, static prototyping
+- **SwiftUI**: live SwiftUI prototyping for native interactions, device capabilities
+- **React/Next**: web design, layout, and live prototyping
 
 ## 💡 What I Do
 - Transform designs into live code prototypes
