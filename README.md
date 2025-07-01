@@ -15,4 +15,4 @@ I enjoy the gap between design and development, building digital experiences tha
 - Prototype and iterate on product ideas
 - Bridge the gap between design and development teams
 
-*"Code is the highest fidelity of software design." - Me*
+*"Code is the highest fidelity of software design."
