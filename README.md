@@ -1,18 +1,20 @@
-# Hello, I'm Wayne
-### Product designer, builder
+# Hi, I'm Wayne 👋
 
-I enjoy the gap between design and development, building digital experiences that are both beautiful and functional. 
+Product designer and developer bridging the gap between design and code. I build digital experiences that are both beautiful and functional.
 
-## 🛠 Design Stack
-- **Figma**: wireframing, user-flows, screen design, static prototyping
-- **SwiftUI**: live SwiftUI prototyping for native interactions, device capabilities
-- **React/Next**: web design, layout, and live prototyping
+## Tech Stack
+**Design & Prototyping**
+- Figma for wireframing, user flows, and design systems
+- SwiftUI for native iOS prototyping
+- React/Next.js for web development and prototyping
 
-## 💡 What I Do
-- Transform designs into live code prototypes
-- Build intuitive user interfaces with SwiftUI
-- Create responsive web pages using React
-- Prototype and iterate on product ideas
-- Bridge the gap between design and development teams
+## What I Do
+- Transform designs into production-ready code
+- Build intuitive user interfaces for web and mobile
+- Create high-fidelity prototypes that feel real
+- Collaborate with design and engineering teams
 
-*"Code is the highest fidelity of software design."
+*"Code is the highest fidelity of software design."*
+
+---
+📫 Let's connect and build something great together!
